@@ -1,0 +1,41 @@
+.filters {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 86vh;
+}
+
+.filters > span {
+  padding-bottom: 20px;
+}
+
+.title {
+    font-size: 30px;
+  }
+
+@media only screen and (max-width: 650px) {
+  .filters {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+  }
+
+  .filters > span {
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+  .filters > span:nth-child(1) {
+    font-size: 20px;
+    padding-right: 10px;
+    color: orange;
+  }
+  .filters > span:last-child {
+    padding-left: 10px;
+  }
+}

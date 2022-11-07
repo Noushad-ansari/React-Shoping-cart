@@ -1,0 +1,30 @@
+.home{
+    display: flex;
+    margin-top: 10px;
+}
+
+.productContainer{
+    margin-left: 20px;
+    display: flex;
+    width: 78%;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid red;
+}
+
+@media only screen and (max-width: 650px){
+
+    .productContainer{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productContainer{
+        width: 100%;
+    }
+}
