@@ -6,8 +6,8 @@ import "./header.css"
 
 export default function Header() {
     return (
-        <div>
-            <Navbar bg="dark" variant="dark">
+        <div className='headerWrapper '>
+            <Navbar bg="dark" variant="dark" fixed="fixed" >
                 <Container>
                     <Navbar.Brand className= "Brand">
                         <Link href="/">Shoping Cart</Link>
@@ -16,7 +16,7 @@ export default function Header() {
                         <FormControl type="text" placeholder="Search Product"  />
                     </Navbar.Text>
                     <Nav>
-                        <Dropdown alighnright = "true" className='toggle'>
+                        <Dropdown alignStart  className='toggle'>
                             <Dropdown.Toggle variant="success">
                                 <FaShoppingCart color="white" fontSize="25px" />
                                 <Badge bg="success">{0}</Badge>

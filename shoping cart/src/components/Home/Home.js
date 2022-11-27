@@ -7,7 +7,7 @@ import "./home.css"
 export default function Home() {
 
   const { state: { products } } = CartState()
-  // console.log(products)
+  console.log(products)
 
   return (
     <div className="home">
@@ -16,7 +16,7 @@ export default function Home() {
       <Filter />
 
       {/* Right****************Products*************** */}
-      <div className="productContainer">
+      <div className="productContainer bg-dark">
         {products.map(product => {
           return <SingleProduct key={product.id} product={product} />
         })}

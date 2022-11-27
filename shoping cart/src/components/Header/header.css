@@ -1,7 +1,15 @@
 .headerWrapper{
-    overflow-x: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
+
+.navbar-expand .navbar-nav .dropdown-menu {
+    position: absolute;
+    left: -280px !important;
+   
+}
 
 
 @media only screen and (max-width: 650px) {
@@ -11,6 +19,17 @@
     }
     .toggle{
         padding: 10px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 450px) {
+    
+    .navbar-expand .navbar-nav .dropdown-menu {
+        position: absolute;
+        left: -255px !important;
+       
     }
 }
 
